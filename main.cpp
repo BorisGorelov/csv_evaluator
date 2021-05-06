@@ -1,8 +1,8 @@
 #include "table.hpp"
 
 int main(int argc, char** argv) {
-  Table table(argv[0]);
+  CSV_Table table(argv[1]);
   table.evaluate();
   table.print();
-  return 0;
 }
+// g++ -o csv_evaluator *.cpp -std=c++17 -Wall
